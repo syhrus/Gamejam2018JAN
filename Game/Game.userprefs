@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BLINDED_AM_ME package\Scripts\ToolUser.cs">
+    <Files>
+      <File FileName="Assets\BLINDED_AM_ME package\Scripts\MeshCut.cs" Line="57" Column="4" />
+      <File FileName="Assets\BLINDED_AM_ME package\Scripts\Mesh_Maker.cs" Line="1" Column="1" />
+      <File FileName="Assets\BLINDED_AM_ME package\Scripts\ToolUser.cs" Line="27" Column="95" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
