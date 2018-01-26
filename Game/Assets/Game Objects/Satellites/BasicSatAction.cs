@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicSatAction : MonoBehaviour {
 
-    public int WaitForSeconds = 2;
+    public float WaitForSeconds = 2;
 
     private void OnTriggerEnter(Collider other)
     {
