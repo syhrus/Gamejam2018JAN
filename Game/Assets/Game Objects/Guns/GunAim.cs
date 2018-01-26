@@ -9,6 +9,7 @@ public class GunAim : MonoBehaviour {
     public Transform barrel;
     public GameObject Projectile;
     public bool FIRE = false;
+    public bool canFire = true;
 
     void Start () {
         barrel = transform.GetChild(0).GetComponent<Transform>();
@@ -35,11 +36,17 @@ public class GunAim : MonoBehaviour {
 
             barrel.RotateAround(transform.position, new Vector3(0, 0, -1), MouseDelta * rotateSpeed);
         }
-        if (FIRE)
+        if (FIRE && canFire)
         {
             GameObject firedProjectile = Instantiate(Projectile, barrel.position, new Quaternion());
             firedProjectile.GetComponent<Rigidbody>().AddForce(barrel.up, ForceMode.Impulse);
             FIRE = false;
+            canFire = false;
         }
+    }
+
+    public void Fire()
+    {
+        FIRE = true;
     }
 }
