@@ -10,12 +10,12 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
 
     FMOD.Studio.EventInstance music01Event;
-    FMOD.Studio.ParameterInstance bigArpBassParameter;
+    FMOD.Studio.ParameterInstance bassEffectParameter;
 
-    public enum EffectType { BITCRUSH, REVERB, FART };
-    public enum Track { Bass, Synth, Drums, Harmonys };
+    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, };
+    public enum Track { Bass, Synth, Drums, Harmony };
 
-    public int bigArpBassIndex = 0;
+    public int bassEffectIndex = 0;
 
     private void Awake()
     {
@@ -27,13 +27,13 @@ public class AudioManager : MonoBehaviour {
     void Start () 
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
-        music01Event.getParameter("BigArpBass", out bigArpBassParameter);
+        music01Event.getParameter("BassEffect", out bassEffectParameter);
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        bigArpBassParameter.setValue(bigArpBassIndex);
+        bigArpBassParameter.setValue(bassEffectIndex);
 	}
 
     public void startAllAudio ()
@@ -42,18 +42,54 @@ public class AudioManager : MonoBehaviour {
         UnityEngine.Debug.Log("music start?");
     }
 
-//    public void bigArpBassCollision ()
-//    {
-//        bigArpBassIndex = bigArpBassIndex + 1;
-//    }
 
     public void resetAudioEffects ()
     {
-        bigArpBassIndex = 0;
+        bassEffectIndex = 0;
     }
 
     public void AddEffect(EffectType effectType, float effectStrength, Track track)
     {
         //Add in how each effect is handled here.
+
+        switch (track)
+        {
+            case Track.Bass: {
+                    switch (effectType)
+                    {
+                        case EffectType.CLEAN:
+                            {
+                                bassEffectIndex = 0;
+                            }
+                        case EffectType.BITCRUSH:
+                            {
+                                bassEffectIndex = 1;
+                                break;
+                            }
+                        case EffectType.REVERB:
+                            {
+                                bassEffectIndex = 2;
+                                break;
+                            }
+                        case EffectType.RINGMOD:
+                            {
+                                bassEffectIndex = 3;
+                                break;
+                            }
+                        case EffectType.SQUELCH:
+                            {
+                                bassEffectIndex = 4;
+                                break;
+                            }
+                    }
+
+                    break;
+                };
+
+            default
+                {
+                    break;
+                }
+        }
     }
 }
