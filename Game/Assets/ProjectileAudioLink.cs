@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class ProjectileAudioLink : MonoBehaviour {
 
-    public GunAim.Track thisTrack;
+    public AudioManager.Track thisTrack;
 	
 }
