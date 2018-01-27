@@ -13,12 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114342986965634066}
-  - {fileID: 114254045853866056}
+  - {fileID: 114951270704910440}
   EditorEvents:
   - {fileID: 114328492308662922}
-  MasterBankRef: {fileID: 114254045853866056}
+  MasterBankRef: {fileID: 114951270704910440}
   StringsBankRef: {fileID: 114342986965634066}
-  stringsBankWriteTime: 636526674560000000
+  stringsBankWriteTime: 636526718110000000
   cacheVersion: 2
 --- !u!114 &114026992302057128
 MonoBehaviour:
@@ -83,6 +83,36 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114161092595157542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114183146809321928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
+  Default: 0
 --- !u!114 &114254045853866056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +130,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 4276672
-  Exists: 1
+  Exists: 0
 --- !u!114 &114302608192007210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,12 +160,12 @@ MonoBehaviour:
   Path: event:/Music01
   guid: 8e87d7dc9a34a34f8bd402c38807dd13
   Banks:
-  - {fileID: 114254045853866056}
+  - {fileID: 114951270704910440}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114840672163677048}
+  - {fileID: 114183146809321928}
   MinDistance: 0
   MaxDistance: 0
   Length: 3000
@@ -150,8 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: /Users/AzMacbook/Documents/GameFmodSession/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636526674560000000
+  Path: FMODAssets/GameFmodSession/Build/Desktop/Master Bank.strings.bank
+  lastModified: 636526718110000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -232,6 +262,25 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114755689376594276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/AzMacbook/Documents/GitHub/Gamejam2018JAN/Game/FMODAssets/Desktop/Master
+    Bank.bank
+  lastModified: 636526701790000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 4276672
+  Exists: 1
 --- !u!114 &114840672163677048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +334,25 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114951270704910440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/AzMacbook/Documents/GitHub/Gamejam2018JAN/Game/FMODAssets/GameFmodSession/Build/Desktop/Master
+    Bank.bank
+  lastModified: 636526718110000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 4276672
+  Exists: 1
 --- !u!114 &114957527031390852
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{f6df8505-6aee-4ddc-8383-a169f24180b9}">
+        <property name="assetPath">
+            <value>Squelches/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{28154ed4-a0fd-4a90-aebd-c8cd33732bc9}</destination>
+        </relationship>
+    </object>
+</objects>
