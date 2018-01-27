@@ -18,7 +18,7 @@ MonoBehaviour:
   - {fileID: 114880283402915488}
   MasterBankRef: {fileID: 114050098971081444}
   StringsBankRef: {fileID: 114957527031390852}
-  stringsBankWriteTime: 636526667390000000
+  stringsBankWriteTime: 636526674560000000
   cacheVersion: 2
 --- !u!114 &114026992302057128
 MonoBehaviour:
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: /Users/AzMacbook/Documents/GameFmodSession/Build/Desktop/Master Bank.bank
-  lastModified: 636526667390000000
+  lastModified: 636526674560000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -127,6 +127,21 @@ MonoBehaviour:
   Name: Distance
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114494276422131446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
   Default: 0
 --- !u!114 &114515561601331170
 MonoBehaviour:
@@ -237,10 +252,10 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114679799375058522}
+  - {fileID: 114494276422131446}
   MinDistance: 0
   MaxDistance: 0
-  Length: 11250
+  Length: 3000
 --- !u!114 &114941262117114110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: /Users/AzMacbook/Documents/GameFmodSession/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636526667390000000
+  lastModified: 636526674560000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
