@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainScreenEvent : MonoBehaviour {
     
@@ -10,6 +11,12 @@ public class MainScreenEvent : MonoBehaviour {
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().FadeIn(20);
 
         StartCoroutine(ZoomLogo());
+    }
+
+    public void LoadLevel()
+    {
+        GameObject.Find("Audiomanager").GetComponent<AudioManager>().StopAudio();
+        SceneManager.LoadScene("Level01", LoadSceneMode.Single);
     }
 
     IEnumerator ZoomLogo()

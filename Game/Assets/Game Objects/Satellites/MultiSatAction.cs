@@ -78,9 +78,9 @@ public class MultiSatAction : MonoBehaviour {
     }
 
     IEnumerator WaitThenLaunch(Collider other, bool fired)
-    {
-        yield return new WaitForSeconds(WaitForSeconds);
+    {        
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
+        yield return new WaitForSeconds(WaitForSeconds);
         if (fired)
         {
             other.GetComponent<Rigidbody>().AddForce(transform.Find("SecondAntenna").up, ForceMode.Impulse);
