@@ -398,6 +398,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: audioEffect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
   m_IsPrefabParent: 0
@@ -553,7 +558,7 @@ GameObject:
   - component: {fileID: 2105477169}
   - component: {fileID: 2105477168}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Audiomanager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Rhys Test Chamber.unity
+- path: Assets/NewTestChamber.unity
   isLoaded: 1
   isActive: 1
