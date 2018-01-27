@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour {
     FMOD.Studio.EventInstance music01Event;
     FMOD.Studio.ParameterInstance bigArpBassParameter;
 
-    public enum EffectType { BITCRUSH, REVERB, FART };
+    public enum EffectType { BITCRUSH, REVERB, FART, SQUELCH };
     public enum Track { Bass, Synth, Drums, Harmonys, None };
 
     public int bigArpBassIndex = 0;

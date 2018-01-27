@@ -28,7 +28,7 @@ public class GoalSatAction : MonoBehaviour {
         if (other.tag == "Projectile")
         {
             other.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            other.transform.position = SignalStorage[Signals.Count].position;
+            other.transform.position = SignalStorage[Signals.Count + 1].position;
             other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 
             Signals.Add(other.transform);
