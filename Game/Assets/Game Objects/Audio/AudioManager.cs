@@ -42,6 +42,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void Fire()
+    {
+        fireOnOff = 1;
+    }
+
+    public void Calm()
+    {
+        fireOnOff = 0;
+    }
+
     public void SetVolumeHard(float volume)
     {
 
