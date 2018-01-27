@@ -52,6 +52,11 @@ public class AudioManager : MonoBehaviour
         fireOnOff = 0;
     }
 
+    public void StopAudio()
+    {
+        music01Event.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
     public void SetVolumeHard(float volume)
     {
 

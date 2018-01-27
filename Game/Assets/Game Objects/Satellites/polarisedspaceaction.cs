@@ -5,12 +5,20 @@ using UnityEngine;
 public class polarisedspaceaction : MonoBehaviour {
 
     public AudioManager.Track filteredTrack;
+    public AudioManager.EffectType audioEffect;
+    public float effectStrength = 0;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Projectile" && other.GetComponent<ProjectileAudioLink>().thisTrack != filteredTrack)
+        if (other.tag == "Projectile")
         {
-            Destroy(other.gameObject);
+            if (other.GetComponent<ProjectileAudioLink>().thisTrack != filteredTrack) {
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
+            }
         }
     }
 }
