@@ -11,8 +11,8 @@ public class GunAim : MonoBehaviour {
     public bool FIRE = false;
     public bool canFire = true;
 	public float speedMod = 1f;
-    public enum Track {Bass, Synth, Drums, Harmonys };
-    public Track thisTrack;
+    
+    public AudioManager.Track thisTrack;
 
     void Start () {
         barrel = transform.GetChild(0).GetComponent<Transform>();

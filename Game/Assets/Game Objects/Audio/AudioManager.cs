@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour {
     FMOD.Studio.EventInstance music01Event;
     FMOD.Studio.ParameterInstance bigArpBassParameter;
 
+    public enum EffectType { BITCRUSH, REVERB, FART };
+    public enum Track { Bass, Synth, Drums, Harmonys };
+
     public int bigArpBassIndex = 0;
 
     private void Awake()
@@ -49,7 +52,7 @@ public class AudioManager : MonoBehaviour {
         bigArpBassIndex = 0;
     }
 
-    public void AddEffect(BasicSatAction.EffectType effectType, float effectStrength, GunAim.Track track)
+    public void AddEffect(EffectType effectType, float effectStrength, Track track)
     {
         //Add in how each effect is handled here.
     }

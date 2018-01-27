@@ -5,8 +5,8 @@ using UnityEngine;
 public class BasicSatAction : MonoBehaviour {
 
     public float WaitForSeconds = 2;
-    public enum EffectType {BITCRUSH, REVERB, FART };
-    public EffectType audioEffect;
+    
+    public AudioManager.EffectType audioEffect;
     public float effectStrength = 1;
 
     private void OnTriggerEnter(Collider other)
