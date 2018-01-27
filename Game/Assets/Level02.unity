@@ -191,6 +191,16 @@ Prefab:
       propertyPath: m_Name
       value: BasicSat (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
   m_IsPrefabParent: 0
@@ -349,6 +359,16 @@ Prefab:
       propertyPath: m_Name
       value: BasicSat (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
   m_IsPrefabParent: 0
@@ -394,6 +414,16 @@ Prefab:
     - target: {fileID: 1520129549350110, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
       propertyPath: m_Name
       value: BasicSat (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
@@ -505,6 +535,16 @@ Prefab:
     - target: {fileID: 1520129549350110, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
       propertyPath: m_Name
       value: BasicSat (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
@@ -909,6 +949,16 @@ Prefab:
       propertyPath: m_Name
       value: BasicSat (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
   m_IsPrefabParent: 0
@@ -1011,6 +1061,16 @@ Prefab:
       propertyPath: m_Name
       value: BasicSat (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
   m_IsPrefabParent: 0
@@ -1056,6 +1116,16 @@ Prefab:
     - target: {fileID: 1520129549350110, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
       propertyPath: m_Name
       value: BasicSat (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
@@ -1112,6 +1182,11 @@ Prefab:
         type: 2}
       propertyPath: speedMod
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
@@ -1488,6 +1563,11 @@ Prefab:
       propertyPath: speedMod
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
   m_IsPrefabParent: 0
@@ -1544,6 +1624,11 @@ Prefab:
       propertyPath: speedMod
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
   m_IsPrefabParent: 0
@@ -1589,6 +1674,16 @@ Prefab:
     - target: {fileID: 1520129549350110, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
       propertyPath: m_Name
       value: BasicSat (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356360287764142, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994662568300312, guid: 619f3d53d5e5dd94d84940f106e75d0b,
+        type: 2}
+      propertyPath: WaitForSeconds
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 619f3d53d5e5dd94d84940f106e75d0b, type: 2}
