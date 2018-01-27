@@ -5,6 +5,9 @@ using UnityEngine;
 public class BasicSatAction : MonoBehaviour {
 
     public float WaitForSeconds = 2;
+    public enum EffectType {BITCRUSH, REVERB, FART };
+    public EffectType audioEffect;
+    public float effectStrength = 1;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,6 +24,7 @@ public class BasicSatAction : MonoBehaviour {
     IEnumerator WaitThenLaunch(Collider other)
     {
         yield return new WaitForSeconds(WaitForSeconds);
+        GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
 
         other.GetComponent<Rigidbody>().AddForce(transform.up, ForceMode.Impulse);
     }

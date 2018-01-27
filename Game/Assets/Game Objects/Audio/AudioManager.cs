@@ -48,4 +48,9 @@ public class AudioManager : MonoBehaviour {
     {
         bigArpBassIndex = 0;
     }
+
+    public void AddEffect(BasicSatAction.EffectType effectType, float effectStrength, GunAim.Track track)
+    {
+        //Add in how each effect is handled here.
+    }
 }
