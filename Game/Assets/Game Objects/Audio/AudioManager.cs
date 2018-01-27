@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour {
     FMOD.Studio.EventInstance music01Event;
     FMOD.Studio.ParameterInstance bigArpBassParameter;
 
-    public GunAim.Track bigArpBassIndex = GunAim.Track.Bass;
+    public int bigArpBassIndex = 0;
 
     private void Awake()
     {
