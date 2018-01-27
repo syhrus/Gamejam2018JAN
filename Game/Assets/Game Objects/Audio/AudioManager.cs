@@ -31,7 +31,7 @@ public class AudioManager : MonoBehaviour
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
         music01Event.getParameter("BigArpBass", out bassEffectParameter);
-        music01Event.start();
+        //music01Event.start();
     }
 
     // Update is called once per frame
