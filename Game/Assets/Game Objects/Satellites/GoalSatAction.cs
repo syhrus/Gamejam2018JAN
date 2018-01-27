@@ -34,4 +34,9 @@ public class GoalSatAction : MonoBehaviour {
 
         }
     }
+
+    public void ClearSigs()
+    {
+        Signals.Clear();
+    }
 }

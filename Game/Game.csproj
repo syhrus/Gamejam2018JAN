@@ -290,9 +290,10 @@
   <ItemGroup>
     <Compile Include="Assets\Game Objects\Guns\GunAim.cs" />
     <Compile Include="Assets\Game Objects\Satellites\BasicSatAction.cs" />
+    <Compile Include="Assets\Game Objects\Satellites\GoalSatAction.cs" />
     <Compile Include="Assets\Game Objects\Satellites\SatelliteRotate.cs" />
     <Compile Include="Assets\Game Objects\UI\FireZeMissiles.cs" />
-    <Compile Include="Assets\GoalSatAction.cs" />
+    <Compile Include="Assets\Game Objects\UI\ResetScript.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
     <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
