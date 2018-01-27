@@ -321,6 +321,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game Objects\Audio\AudioManager.cs" />
     <Compile Include="Assets\Game Objects\Guns\GunAim.cs" />
     <Compile Include="Assets\Game Objects\Satellites\BasicSatAction.cs" />
     <Compile Include="Assets\Game Objects\Satellites\SatelliteRotate.cs" />
