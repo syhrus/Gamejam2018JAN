@@ -27,6 +27,26 @@ public class AudioManager : MonoBehaviour
     public int drumsEffectIndex = 0;
     public int harmonysEffectIndex = 0;
 
+    public void FadeIn(float seconds)
+    {
+        StartCoroutine(FadeInRoutine(seconds));
+    }
+
+    private IEnumerator FadeInRoutine(float seconds)
+    {
+        float fadeInDelta = 1 / (seconds*20);
+        for (float i = 0.0f; i < 1; i += fadeInDelta)
+        {
+            music01Event.setVolume(i);
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+    public void SetVolumeHard(float volume)
+    {
+
+        music01Event.setVolume(volume);
+    }
     private void Awake()
     {
         //singleton
@@ -45,6 +65,7 @@ public class AudioManager : MonoBehaviour
         music01Event.getParameter("HarmonyEffect", out harmonysEffectParameter);
 
         music01Event.start();
+        music01Event.setVolume(0);
     }
 
     // Update is called once per frame
