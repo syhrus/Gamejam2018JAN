@@ -10,6 +10,7 @@ public class GunAim : MonoBehaviour {
     public GameObject Projectile;
     public bool FIRE = false;
     public bool canFire = true;
+	public float speedMod = 1f;
 
     void Start () {
         barrel = transform.GetChild(0).GetComponent<Transform>();
@@ -39,6 +40,7 @@ public class GunAim : MonoBehaviour {
         if (FIRE && canFire)
         {
             GameObject firedProjectile = Instantiate(Projectile, barrel.position, new Quaternion());
+			firedProjectile.GetComponent<Rigidbody>().mass = speedMod;
             firedProjectile.GetComponent<Rigidbody>().AddForce(barrel.up, ForceMode.Impulse);
             FIRE = false;
             canFire = false;

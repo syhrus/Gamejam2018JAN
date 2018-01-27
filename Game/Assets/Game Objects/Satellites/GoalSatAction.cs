@@ -5,12 +5,13 @@ using UnityEngine;
 public class GoalSatAction : MonoBehaviour {
 
     private List<Transform> Signals;
-    public List<Transform> SignalStorage;
+    private Transform[] SignalStorage;
     public int NumberOfSignals;
 
     private void Start()
     {
         Signals = new List<Transform>();
+        SignalStorage = transform.GetComponentsInChildren<Transform>();
     }
 
     private void Update()
@@ -33,5 +34,10 @@ public class GoalSatAction : MonoBehaviour {
             Signals.Add(other.transform);
 
         }
+    }
+
+    public void ClearSigs()
+    {
+        Signals.Clear();
     }
 }
