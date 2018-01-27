@@ -71,7 +71,7 @@ public class OneUseSatAction : MonoBehaviour {
         other.GetComponent<Rigidbody>().AddForce(transform.up, ForceMode.Impulse);
 
         Instantiate(explosion, transform.position, new Quaternion());
-        Destroy(gameObject);
+        gameObject.SetActive(false);
 
         
     }
