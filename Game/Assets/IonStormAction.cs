@@ -5,16 +5,12 @@ using UnityEngine;
 public class IonStormAction : MonoBehaviour {
 
     private Color lerpedColor;
-    private float lerpValue = 0;
+    private float lerpValue = Random.Range(0,1);
     private float flip = 1.0f;
     public Color colour1;
     public Color colour2;
-
-    private void Start()
-    {
-        lerpValue = Random.Range(0, 1);
-    }
-    void Update () {
+	
+	void Update () {
         lerpedColor = Color.Lerp( colour1, colour2, lerpValue);
         
         lerpValue += 0.01f * flip * Random.Range(0.5f,1.5f);
