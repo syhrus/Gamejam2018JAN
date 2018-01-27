@@ -4,19 +4,16 @@ using UnityEngine;
 using FMODUnity;
 using FMOD;
 
-public class AudioManager : MonoBehaviour
-{
+public class AudioManager : MonoBehaviour {
 
     //singleton
     public static AudioManager instance;
 
     FMOD.Studio.EventInstance music01Event;
-    FMOD.Studio.ParameterInstance bassEffectParameter;
+    FMOD.Studio.ParameterInstance bigArpBassParameter;
 
-
-    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, VOICES };
-    public enum Track { Bass, Synth, Drums, Harmony, None };
-
+    public enum EffectType { BITCRUSH, REVERB, SQUELCH, CLEAN, RINGMOD, FLANGE, VOICE };
+    public enum Track { Bass, Synth, Drums, Harmonys, None };
 
     public int bassEffectIndex = 0;
 
@@ -27,33 +24,43 @@ public class AudioManager : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start()
+    void Start () 
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
-        music01Event.getParameter("BigArpBass", out bassEffectParameter);
-        //music01Event.start();
-    }
-
-    // Update is called once per frame
-    void Update()
+        music01Event.getParameter("BigArpBass", out bigArpBassParameter);
+	}
+	
+	// Update is called once per frame
+	void Update () 
     {
-        bassEffectParameter.setValue(bassEffectIndex);
+        //bigArpBassParameter.setValue(bigArpBassIndex);
+
+        bigArpBassParameter.setValue(bassEffectIndex);
+
+	}
+
+    public void startAllAudio ()
+    {
+        music01Event.start();
+        UnityEngine.Debug.Log("music start?");
     }
 
+//    public void bigArpBassCollision ()
+//    {
+//        bigArpBassIndex = bigArpBassIndex + 1;
+//    }
 
-    public void resetAudioEffects()
+    public void resetAudioEffects ()
     {
         bassEffectIndex = 0;
     }
 
     public void AddEffect(EffectType effectType, float effectStrength, Track track)
     {
-        //Add in how each effect is handled here.
 
         switch (track)
         {
-            case Track.Bass:
-                {
+            case Track.Bass: {
                     switch (effectType)
                     {
                         case EffectType.CLEAN:
