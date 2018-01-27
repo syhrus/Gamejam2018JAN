@@ -50,5 +50,6 @@ public class GunAim : MonoBehaviour {
     public void Fire()
     {
         FIRE = true;
+        //AudioManager.instance.startAllAudio();
     }
 }
