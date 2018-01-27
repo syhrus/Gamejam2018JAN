@@ -36,5 +36,11 @@ public class ResetScript : MonoBehaviour {
         {
             oneUse[i].SetActive(true);
         }
+        AudioManager manager = GameObject.Find("Audiomanager").GetComponent<AudioManager>();
+
+        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Bass);
+        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Drums);
+        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Harmonys);
+        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Synth);
     }
 }
