@@ -4,18 +4,21 @@ using UnityEngine;
 using FMODUnity;
 using FMOD;
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
     //singleton
     public static AudioManager instance;
 
     FMOD.Studio.EventInstance music01Event;
-    FMOD.Studio.ParameterInstance bigArpBassParameter;
+    FMOD.Studio.ParameterInstance bassEffectParameter;
 
-    public enum EffectType { BITCRUSH, REVERB, FART, SQUELCH };
-    public enum Track { Bass, Synth, Drums, Harmonys, None };
 
-    public int bigArpBassIndex = 0;
+    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, VOICES };
+    public enum Track { Bass, Synth, Drums, Harmony, None };
+
+
+    public int bassEffectIndex = 0;
 
     private void Awake()
     {
@@ -24,52 +27,39 @@ public class AudioManager : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () 
+    void Start()
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
-        music01Event.getParameter("BigArpBass", out bigArpBassParameter);
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-<<<<<<< HEAD
-        bigArpBassParameter.setValue(bigArpBassIndex);
-=======
-        bigArpBassParameter.setValue(bassEffectIndex);
->>>>>>> parent of fe127c5... Little fixes to Audio Manager
-	}
-
-    public void startAllAudio ()
-    {
+        music01Event.getParameter("BigArpBass", out bassEffectParameter);
         music01Event.start();
-        UnityEngine.Debug.Log("music start?");
     }
 
-//    public void bigArpBassCollision ()
-//    {
-//        bigArpBassIndex = bigArpBassIndex + 1;
-//    }
-
-    public void resetAudioEffects ()
+    // Update is called once per frame
+    void Update()
     {
-        bigArpBassIndex = 0;
+        bassEffectParameter.setValue(bassEffectIndex);
+    }
+
+
+    public void resetAudioEffects()
+    {
+        bassEffectIndex = 0;
     }
 
     public void AddEffect(EffectType effectType, float effectStrength, Track track)
     {
         //Add in how each effect is handled here.
-<<<<<<< HEAD
-=======
 
         switch (track)
         {
-            case Track.Bass: {
+            case Track.Bass:
+                {
                     switch (effectType)
                     {
                         case EffectType.CLEAN:
                             {
                                 bassEffectIndex = 0;
+                                break;
                             }
                         case EffectType.BITCRUSH:
                             {
@@ -96,11 +86,10 @@ public class AudioManager : MonoBehaviour {
                     break;
                 };
 
-            default
+            default:
                 {
                     break;
                 }
         }
->>>>>>> parent of fe127c5... Little fixes to Audio Manager
     }
 }
