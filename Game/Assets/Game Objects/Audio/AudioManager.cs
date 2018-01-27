@@ -12,10 +12,10 @@ public class AudioManager : MonoBehaviour {
     FMOD.Studio.EventInstance music01Event;
     FMOD.Studio.ParameterInstance bigArpBassParameter;
 
-    public enum EffectType { BITCRUSH, REVERB, FART, SQUELCH };
+    public enum EffectType { BITCRUSH, REVERB, SQUELCH, CLEAN, RINGMOD, FLANGE, VOICE };
     public enum Track { Bass, Synth, Drums, Harmonys, None };
 
-    public int bigArpBassIndex = 0;
+    public int bassEffectIndex = 0;
 
     private void Awake()
     {
@@ -33,11 +33,10 @@ public class AudioManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-<<<<<<< HEAD
-        bigArpBassParameter.setValue(bigArpBassIndex);
-=======
+        //bigArpBassParameter.setValue(bigArpBassIndex);
+
         bigArpBassParameter.setValue(bassEffectIndex);
->>>>>>> parent of fe127c5... Little fixes to Audio Manager
+
 	}
 
     public void startAllAudio ()
@@ -53,14 +52,11 @@ public class AudioManager : MonoBehaviour {
 
     public void resetAudioEffects ()
     {
-        bigArpBassIndex = 0;
+        bassEffectIndex = 0;
     }
 
     public void AddEffect(EffectType effectType, float effectStrength, Track track)
     {
-        //Add in how each effect is handled here.
-<<<<<<< HEAD
-=======
 
         switch (track)
         {
@@ -70,6 +66,7 @@ public class AudioManager : MonoBehaviour {
                         case EffectType.CLEAN:
                             {
                                 bassEffectIndex = 0;
+                                break;
                             }
                         case EffectType.BITCRUSH:
                             {
@@ -96,11 +93,10 @@ public class AudioManager : MonoBehaviour {
                     break;
                 };
 
-            default
+            default:
                 {
                     break;
                 }
         }
->>>>>>> parent of fe127c5... Little fixes to Audio Manager
     }
 }

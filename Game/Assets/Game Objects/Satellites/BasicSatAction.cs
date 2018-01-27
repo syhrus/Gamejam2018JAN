@@ -17,7 +17,7 @@ public class BasicSatAction : MonoBehaviour {
 				GetComponent<Light> ().color = new Color (0.8f, 0f, 0f);
 				break;
 			}
-		case AudioManager.EffectType.FART:
+		case AudioManager.EffectType.SQUELCH:
 			{
 				GetComponent<Light> ().color = new Color (0.768f, 0.768f, 0.0784f);
 				break;
