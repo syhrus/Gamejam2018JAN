@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        bigArpBassParameter.setValue(bassEffectIndex);
+        bassEffectParameter.setValue(bassEffectIndex);
 	}
 
     public void startAllAudio ()
@@ -60,6 +60,7 @@ public class AudioManager : MonoBehaviour {
                         case EffectType.CLEAN:
                             {
                                 bassEffectIndex = 0;
+                                break;
                             }
                         case EffectType.BITCRUSH:
                             {
@@ -86,7 +87,7 @@ public class AudioManager : MonoBehaviour {
                     break;
                 };
 
-            default
+            default:
                 {
                     break;
                 }
