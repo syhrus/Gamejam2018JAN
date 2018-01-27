@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154f18760f476234cadbc3b7ecb8bc98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitForSeconds: 2
+  WaitForSeconds: 1.3
   audioEffect: 0
   effectStrength: 1
 --- !u!135 &135454632467480758

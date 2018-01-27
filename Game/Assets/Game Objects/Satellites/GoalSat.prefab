@@ -112,10 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22a0b81a28c30d44ad9896938d350f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SignalStorage:
-  - {fileID: 4373510841856202}
-  - {fileID: 4309377198450888}
-  NumberOfSignals: 2
+  NumberOfSignals: 4
 --- !u!122 &122194163270021708
 Halo:
   m_ObjectHideFlags: 1

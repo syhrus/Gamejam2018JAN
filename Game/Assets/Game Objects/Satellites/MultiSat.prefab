@@ -133,12 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abbb6a81bb99194eb313bb023cc152f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitForSeconds: 2
+  WaitForSeconds: 1.3
   audioEffect: 0
   effectStrength: 1
   explosion: {fileID: 0}
   direction: 0
-  angle: 23.35
+  angle: 90
 --- !u!135 &135275302004612242
 SphereCollider:
   m_ObjectHideFlags: 1
