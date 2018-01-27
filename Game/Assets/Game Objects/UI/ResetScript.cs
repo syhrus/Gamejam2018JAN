@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class ResetScript : MonoBehaviour {
 
-	public void ResetLevel()
+    GameObject[] oneUse;
+
+    private void Start()
+    {
+        oneUse = GameObject.FindGameObjectsWithTag("NeedsReset");
+    }
+
+    public void ResetLevel()
     {
         GameObject[] goals = GameObject.FindGameObjectsWithTag("Goal");
         GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Projectile");
         GameObject[] guns = GameObject.FindGameObjectsWithTag("Gun");
+        
 
         for (int i = 0; i < projectiles.Length; i++)
         {
@@ -23,6 +31,10 @@ public class ResetScript : MonoBehaviour {
         for(int i = 0; i < guns.Length; i++)
         {
             guns[i].GetComponent<GunAim>().canFire = true;
+        }
+        for (int i = 0; i < oneUse.Length; i++)
+        {
+            oneUse[i].SetActive(true);
         }
     }
 }
