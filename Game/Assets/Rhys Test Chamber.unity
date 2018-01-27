@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 813284849}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,6 +398,7 @@ MonoBehaviour:
   Projectile: {fileID: 1562509306277654, guid: db7068ac75cb4414687f8deab48166f4, type: 2}
   FIRE: 0
   canFire: 1
+  speedMod: 1
 --- !u!65 &813284848
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -807,7 +808,7 @@ GameObject:
   - component: {fileID: 2059193858}
   m_Layer: 0
   m_Name: Gun (1)
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -853,6 +854,7 @@ MonoBehaviour:
   Projectile: {fileID: 1562509306277654, guid: db7068ac75cb4414687f8deab48166f4, type: 2}
   FIRE: 0
   canFire: 1
+  speedMod: 1
 --- !u!212 &2059193861
 SpriteRenderer:
   m_ObjectHideFlags: 0

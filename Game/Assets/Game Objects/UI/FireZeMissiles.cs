@@ -8,6 +8,7 @@ public class FireZeMissiles : MonoBehaviour {
 
     private void Start()
     {
+        allGuns = new List<GunAim>();
         GameObject[] Gunz = GameObject.FindGameObjectsWithTag("Gun");
         for (int i = 0; i < Gunz.Length; i++)
         {
