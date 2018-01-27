@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{c3a2db22-f3f1-44f7-9692-d76e211884c7}">
+        <property name="name">
+            <value>HarmonyEffect</value>
+        </property>
+        <relationship name="folder">
+            <destination>{3a533c7c-df74-46bd-8011-03faee7a296e}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{ef4c1fb5-e410-488f-b771-9ffe5ececacb}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{ef4c1fb5-e410-488f-b771-9ffe5ececacb}">
+        <property name="maximum">
+            <value>10</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

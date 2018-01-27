@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="Workspace" id="{e1b38e26-0416-4728-90ee-33dbdb49088f}">
-        <property name="builtBanksOutputDirectory">
-            <value>../GitHub/Gamejam2018JAN/Game/FMODAssets</value>
-        </property>
+        <property name="builtBanksOutputDirectory"/>
         <relationship name="masterEventFolder">
             <destination>{466b2191-21ab-47a9-8a58-e5c8dc4634b4}</destination>
         </relationship>
