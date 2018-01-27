@@ -4,15 +4,16 @@ using UnityEngine;
 using FMODUnity;
 using FMOD;
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
     //singleton
     public static AudioManager instance;
 
     FMOD.Studio.EventInstance music01Event;
-    FMOD.Studio.ParameterInstance bigArpBassParameter;
+    FMOD.Studio.ParameterInstance bassEffectParameter;
 
-    public enum EffectType { BITCRUSH, REVERB, SQUELCH, CLEAN, RINGMOD, FLANGE, VOICE };
+    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, VOICE };
     public enum Track { Bass, Synth, Drums, Harmonys, None };
 
     public int bassEffectIndex = 0;
@@ -24,33 +25,26 @@ public class AudioManager : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () 
+    void Start()
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
-        music01Event.getParameter("BigArpBass", out bigArpBassParameter);
-	}
-	
-	// Update is called once per frame
-	void Update () 
+        music01Event.getParameter("BassEffect", out bassEffectParameter);
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-        //bigArpBassParameter.setValue(bigArpBassIndex);
+        bassEffectParameter.setValue(bassEffectIndex);
+    }
 
-        bigArpBassParameter.setValue(bassEffectIndex);
-
-	}
-
-    public void startAllAudio ()
+    public void startAllAudio()
     {
         music01Event.start();
         UnityEngine.Debug.Log("music start?");
     }
 
-//    public void bigArpBassCollision ()
-//    {
-//        bigArpBassIndex = bigArpBassIndex + 1;
-//    }
 
-    public void resetAudioEffects ()
+    public void resetAudioEffects()
     {
         bassEffectIndex = 0;
     }
@@ -60,7 +54,8 @@ public class AudioManager : MonoBehaviour {
 
         switch (track)
         {
-            case Track.Bass: {
+            case Track.Bass:
+                {
                     switch (effectType)
                     {
                         case EffectType.CLEAN:
@@ -83,9 +78,19 @@ public class AudioManager : MonoBehaviour {
                                 bassEffectIndex = 3;
                                 break;
                             }
-                        case EffectType.SQUELCH:
+                        case EffectType.FLANGE:
                             {
                                 bassEffectIndex = 4;
+                                break;
+                            }
+                        case EffectType.SQUELCH:
+                            {
+                                bassEffectIndex = 5;
+                                break;
+                            }
+                        case EffectType.VOICE:
+                            {
+                                bassEffectIndex = 6;
                                 break;
                             }
                     }

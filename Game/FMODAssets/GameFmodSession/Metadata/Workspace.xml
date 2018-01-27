@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Workspace" id="{e1b38e26-0416-4728-90ee-33dbdb49088f}">
+        <property name="builtBanksOutputDirectory">
+            <value>../GitHub/Gamejam2018JAN/Game/FMODAssets</value>
+        </property>
+        <relationship name="masterEventFolder">
+            <destination>{466b2191-21ab-47a9-8a58-e5c8dc4634b4}</destination>
+        </relationship>
+        <relationship name="masterTagFolder">
+            <destination>{4a7db5e8-36d0-437f-82d3-eeeaa02f7c8d}</destination>
+        </relationship>
+        <relationship name="masterEffectPresetFolder">
+            <destination>{885759fe-8fc6-4c05-be39-d0bb815f6338}</destination>
+        </relationship>
+        <relationship name="masterParameterPresetFolder">
+            <destination>{3a533c7c-df74-46bd-8011-03faee7a296e}</destination>
+        </relationship>
+        <relationship name="masterBankFolder">
+            <destination>{9ff99f1d-4c11-4285-8956-fa30fdebbb8f}</destination>
+        </relationship>
+        <relationship name="masterAssetFolder">
+            <destination>{28154ed4-a0fd-4a90-aebd-c8cd33732bc9}</destination>
+        </relationship>
+        <relationship name="mixer">
+            <destination>{dcb840bb-1700-42c1-8a21-13394a414aef}</destination>
+        </relationship>
+        <relationship name="platforms">
+            <destination>{e8228ae1-ef3c-482f-b5a1-e3213ae59fb2}</destination>
+        </relationship>
+    </object>
+</objects>
