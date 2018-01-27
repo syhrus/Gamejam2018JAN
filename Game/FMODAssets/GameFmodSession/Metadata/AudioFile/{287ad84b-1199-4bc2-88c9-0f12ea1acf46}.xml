@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{287ad84b-1199-4bc2-88c9-0f12ea1acf46}">
+        <property name="assetPath">
+            <value>RindMod/Drums_Ringmod.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>24</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{28154ed4-a0fd-4a90-aebd-c8cd33732bc9}</destination>
+        </relationship>
+    </object>
+</objects>

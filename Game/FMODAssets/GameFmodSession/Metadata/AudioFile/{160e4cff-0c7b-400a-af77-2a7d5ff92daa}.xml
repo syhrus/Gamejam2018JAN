@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{160e4cff-0c7b-400a-af77-2a7d5ff92daa}">
+        <property name="assetPath">
+            <value>Squelches/Drum_Squelch.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>48</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{28154ed4-a0fd-4a90-aebd-c8cd33732bc9}</destination>
+        </relationship>
+    </object>
+</objects>

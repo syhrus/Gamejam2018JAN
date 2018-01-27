@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{756495f4-d776-4f9c-a554-f27b42ebb476}">
+        <property name="assetPath">
+            <value>BitCrushed/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{28154ed4-a0fd-4a90-aebd-c8cd33732bc9}</destination>
+        </relationship>
+    </object>
+</objects>
