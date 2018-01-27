@@ -722,6 +722,16 @@ Prefab:
       propertyPath: speedMod
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: rotateSpeed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
   m_IsPrefabParent: 0
@@ -833,6 +843,11 @@ Prefab:
         type: 2}
       propertyPath: speedMod
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
@@ -1208,6 +1223,11 @@ Prefab:
         type: 2}
       propertyPath: speedMod
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114153028732103762, guid: 18857f6b10bdd694e81fa5b4fab7d165,
+        type: 2}
+      propertyPath: thisTrack
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18857f6b10bdd694e81fa5b4fab7d165, type: 2}
