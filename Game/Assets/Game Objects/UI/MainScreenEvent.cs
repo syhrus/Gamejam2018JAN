@@ -28,6 +28,7 @@ public class MainScreenEvent : MonoBehaviour {
     public void LoadLevel()
     {
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().StopAudio();
+        Destroy(GameObject.Find("Audiomanager"));
         SceneManager.LoadScene("Level01", LoadSceneMode.Single);
     }
 

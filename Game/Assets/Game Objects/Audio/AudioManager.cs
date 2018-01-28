@@ -73,6 +73,7 @@ public class AudioManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
         music01Event.getParameter("Fire", out fireParameter);
         music01Event.getParameter("WinWeird", out winGoodBad);

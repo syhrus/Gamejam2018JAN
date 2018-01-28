@@ -65,4 +65,31 @@ public class ProjectileAudioLink : MonoBehaviour {
                 }
         }
     }
+
+    public void SetCorrectEffect()
+    {
+        switch (thisTrack)
+        {
+            case AudioManager.Track.Bass:
+                {
+                    currentEffect = GameObject.Find("LevelEventHandler").GetComponent<LevelEventHandler>().BassEffect;
+                    break;
+                }
+            case AudioManager.Track.Synth:
+                {
+                    currentEffect = GameObject.Find("LevelEventHandler").GetComponent<LevelEventHandler>().SynthEffect;
+                    break;
+                }
+            case AudioManager.Track.Drums:
+                {
+                    currentEffect = GameObject.Find("LevelEventHandler").GetComponent<LevelEventHandler>().DrumsEffect;
+                    break;
+                }
+            case AudioManager.Track.Harmonys:
+                {
+                    currentEffect = GameObject.Find("LevelEventHandler").GetComponent<LevelEventHandler>().HarmonyEffect;
+                    break;
+                }
+        }
+    }
 }

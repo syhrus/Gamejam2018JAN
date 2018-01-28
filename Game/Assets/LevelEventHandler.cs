@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LevelEventHandler : MonoBehaviour {
 
-    public int BassEffect = 0;
-    public int SynthEffect = 0;
-    public int HarmonyEffect = 0;
-    public int DrumsEffect = 0;
+    public AudioManager.EffectType BassEffect;
+    public AudioManager.EffectType SynthEffect;
+    public AudioManager.EffectType HarmonyEffect;
+    public AudioManager.EffectType DrumsEffect;
     public int Level = 1;
     AudioManager manager;
 
     private void OnEnable()
     {
+        DontDestroyOnLoad(gameObject);
         manager = GameObject.Find("Audiomanager").GetComponent<AudioManager>();
 
         manager.SetVolumeHard(0);
@@ -21,9 +22,7 @@ public class LevelEventHandler : MonoBehaviour {
         manager.FadeIn(2);
     }
 
-    public void LoadNextLevel()
-    {
-        manager.StopAudio();
-        SceneManager.LoadScene(Level++, LoadSceneMode.Single);
-    }
+    
+
+    
 }

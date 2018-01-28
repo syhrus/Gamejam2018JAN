@@ -48,6 +48,7 @@ public class GunAim : MonoBehaviour {
 			firedProjectile.GetComponent<Rigidbody>().mass = speedMod;
             firedProjectile.GetComponent<Rigidbody>().AddForce(barrel.up, ForceMode.Impulse);
             firedProjectile.GetComponent<ProjectileAudioLink>().thisTrack = thisTrack;
+            firedProjectile.GetComponent<ProjectileAudioLink>().SetCorrectEffect();
             GameObject.Find("Audiomanager").GetComponent<AudioManager>().Ping();
             FIRE = false;
             canFire = false;
