@@ -66,7 +66,7 @@ public class OneUseSatAction : MonoBehaviour {
 
     IEnumerator WaitThenLaunch(Collider other)
     {
-        
+        other.GetComponent<ProjectileAudioLink>().currentEffect = audioEffect;
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
         yield return new WaitForSeconds(WaitForSeconds);
         other.GetComponent<Rigidbody>().AddForce(transform.up, ForceMode.Impulse);

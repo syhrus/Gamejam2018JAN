@@ -78,7 +78,8 @@ public class MultiSatAction : MonoBehaviour {
     }
 
     IEnumerator WaitThenLaunch(Collider other, bool fired)
-    {        
+    {
+        other.GetComponent<ProjectileAudioLink>().currentEffect = audioEffect;
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
         yield return new WaitForSeconds(WaitForSeconds);
         if (fired)
