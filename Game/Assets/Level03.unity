@@ -772,7 +772,7 @@ Prefab:
     - target: {fileID: 108446624551330204, guid: 3bcd173144ce75b419bd2fca16aaab14,
         type: 2}
       propertyPath: m_Intensity
-      value: 0.4
+      value: 0.42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3bcd173144ce75b419bd2fca16aaab14, type: 2}
