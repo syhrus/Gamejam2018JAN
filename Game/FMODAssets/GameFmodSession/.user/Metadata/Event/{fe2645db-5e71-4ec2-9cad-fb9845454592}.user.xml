@@ -22,7 +22,11 @@
             <value>false</value>
         </property>
     </object>
-    <object class="GroupTrack" id="{370b2e43-1e7e-436f-94e1-52a26cc0f277}"/>
+    <object class="GroupTrack" id="{370b2e43-1e7e-436f-94e1-52a26cc0f277}">
+        <property name="uiAutomationTracksVisible">
+            <value>false</value>
+        </property>
+    </object>
     <object class="GroupTrack" id="{37dbda6d-864d-43ff-93ea-56dcbe29a853}"/>
     <object class="GroupTrack" id="{92fef021-6fef-41a3-abdf-d310089c7302}"/>
     <object class="Timeline" id="{9b014bb4-a749-4e1a-abb0-4f9f7676defb}">
