@@ -26,6 +26,7 @@ public class ResetScript : MonoBehaviour {
         for (int i = 0; i < goals.Length; i++)
         {
             goals[i].GetComponent<GoalSatAction>().ClearSigs();
+            goals[i].GetComponent<GoalSatAction>().Win = false;
         };
 
         for(int i = 0; i < guns.Length; i++)
