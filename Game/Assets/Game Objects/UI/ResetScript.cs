@@ -41,9 +41,9 @@ public class ResetScript : MonoBehaviour {
         AudioManager manager = GameObject.Find("Audiomanager").GetComponent<AudioManager>();
         manager.fireOnOff = 0;
 
-        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Bass);
-        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Drums);
-        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Harmonys);
-        manager.AddEffect(AudioManager.EffectType.CLEAN, 1, AudioManager.Track.Synth);
+        manager.AddEffect(AudioManager.EffectType.NONE, 1, AudioManager.Track.Bass);
+        manager.AddEffect(AudioManager.EffectType.NONE, 1, AudioManager.Track.Drums);
+        manager.AddEffect(AudioManager.EffectType.NONE, 1, AudioManager.Track.Harmonys);
+        manager.AddEffect(AudioManager.EffectType.NONE, 1, AudioManager.Track.Synth);
     }
 }

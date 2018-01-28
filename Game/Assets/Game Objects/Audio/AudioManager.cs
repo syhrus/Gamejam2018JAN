@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     FMOD.Studio.ParameterInstance harmonysEffectParameter;
 
 
-    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, VOICE };
+    public enum EffectType { CLEAN, BITCRUSH, REVERB, RINGMOD, FLANGE, SQUELCH, VOICE, NONE };
     public enum Track { Bass, Synth, Drums, Harmonys, None };
 
     public int fireOnOff = 0;
@@ -148,6 +148,11 @@ public class AudioManager : MonoBehaviour
                 {
                     switch (effectType)
                     {
+                        case EffectType.NONE:
+                            {
+                                bassEffectIndex = 0;
+                                break;
+                            }
                         case EffectType.CLEAN:
                             {
                                 //bassEffectIndex = 0;
@@ -232,6 +237,11 @@ public class AudioManager : MonoBehaviour
                 {
                     switch (effectType)
                     {
+                        case EffectType.NONE:
+                            {
+                                bassEffectIndex = 0;
+                                break;
+                            }
                         case EffectType.CLEAN:
                             {
                                 //synthEffectIndex = 0;
@@ -316,6 +326,11 @@ public class AudioManager : MonoBehaviour
                 {
                     switch (effectType)
                     {
+                        case EffectType.NONE:
+                            {
+                                bassEffectIndex = 0;
+                                break;
+                            }
                         case EffectType.CLEAN:
                             {
                                 //drumsEffectIndex = 0;
@@ -400,6 +415,11 @@ public class AudioManager : MonoBehaviour
                 {
                     switch (effectType)
                     {
+                        case EffectType.NONE:
+                            {
+                                bassEffectIndex = 0;
+                                break;
+                            }
                         case EffectType.CLEAN:
                             {
                                 //harmonysEffectIndex = 0;
