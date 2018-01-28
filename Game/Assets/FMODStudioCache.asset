@@ -16,9 +16,11 @@ MonoBehaviour:
   - {fileID: 114951270704910440}
   EditorEvents:
   - {fileID: 114328492308662922}
+  - {fileID: 114211180704282616}
+  - {fileID: 114828816518632880}
   MasterBankRef: {fileID: 114951270704910440}
   StringsBankRef: {fileID: 114342986965634066}
-  stringsBankWriteTime: 636526850930000000
+  stringsBankWriteTime: 636527405500000000
   cacheVersion: 2
 --- !u!114 &114006807188621708
 MonoBehaviour:
@@ -143,6 +145,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114165341375864716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fire
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114183146809321928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +175,28 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114211180704282616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ping
+  guid: 0f96c7a61b2abb489db7e8e144db05c4
+  Banks:
+  - {fileID: 114951270704910440}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2559
 --- !u!114 &114254045853866056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,14 +279,14 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114764372137391592}
-  - {fileID: 114618792392125382}
-  - {fileID: 114375072169357346}
-  - {fileID: 114893881203789922}
-  - {fileID: 114972051878319324}
+  - {fileID: 114608985443682592}
+  - {fileID: 114475199640268098}
+  - {fileID: 114627203387655260}
+  - {fileID: 114500118292884294}
+  - {fileID: 114670306046011122}
   MinDistance: 0
   MaxDistance: 0
-  Length: 4500
+  Length: 78000
 --- !u!114 &114342986965634066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,11 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODAssets/GameFmodSession/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636526850930000000
+  lastModified: 636527405500000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 718
+    Value: 824
   Exists: 1
 --- !u!114 &114375072169357346
 MonoBehaviour:
@@ -295,6 +334,66 @@ MonoBehaviour:
   Name: Distance
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114475199640268098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DrumsEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114484729807312328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114500118292884294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: HarmonyEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114508133617530628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SynthEffect
+  Min: 0
+  Max: 10
   Default: 0
 --- !u!114 &114515561601331170
 MonoBehaviour:
@@ -340,6 +439,21 @@ MonoBehaviour:
   Name: Distance
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114608985443682592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SynthEffect
+  Min: 0
+  Max: 10
   Default: 0
 --- !u!114 &114611874776286000
 MonoBehaviour:
@@ -401,6 +515,51 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114627203387655260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114633634890607180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: HarmonyEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114670306046011122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fire
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114755689376594276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +609,43 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114813000276583378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DrumsEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114828816518632880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SatelliteDown
+  guid: b34849b86042b840bb447456c5e263e2
+  Banks:
+  - {fileID: 114951270704910440}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3336
 --- !u!114 &114840672163677048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,11 +757,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/AzMacbook/Documents/GitHub/Gamejam2018JAN/Game/FMODAssets/GameFmodSession/Build/Desktop/Master
     Bank.bank
-  lastModified: 636526850930000000
+  lastModified: 636527405500000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 12258304
+    Value: 13117664
   Exists: 1
 --- !u!114 &114957527031390852
 MonoBehaviour:
