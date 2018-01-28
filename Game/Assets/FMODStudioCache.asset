@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 114828816518632880}
   MasterBankRef: {fileID: 114951270704910440}
   StringsBankRef: {fileID: 114342986965634066}
-  stringsBankWriteTime: 636527405500000000
+  stringsBankWriteTime: 636527410070000000
   cacheVersion: 2
 --- !u!114 &114006807188621708
 MonoBehaviour:
@@ -197,6 +197,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2559
+--- !u!114 &114241967041265708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DrumsEffect
+  Min: 0
+  Max: 10
+  Default: 0
 --- !u!114 &114254045853866056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,11 +294,12 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114608985443682592}
-  - {fileID: 114475199640268098}
-  - {fileID: 114627203387655260}
-  - {fileID: 114500118292884294}
-  - {fileID: 114670306046011122}
+  - {fileID: 114480790407664832}
+  - {fileID: 114241967041265708}
+  - {fileID: 114550793491678476}
+  - {fileID: 114523766412360838}
+  - {fileID: 114349710293172954}
+  - {fileID: 114673507218988322}
   MinDistance: 0
   MaxDistance: 0
   Length: 78000
@@ -299,12 +315,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODAssets/GameFmodSession/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636527405500000000
+  lastModified: 636527410070000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 824
   Exists: 1
+--- !u!114 &114349710293172954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fire
+  Min: 0
+  Max: 3
+  Default: 0
 --- !u!114 &114375072169357346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +378,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: DrumsEffect
+  Min: 0
+  Max: 10
+  Default: 0
+--- !u!114 &114480790407664832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SynthEffect
   Min: 0
   Max: 10
   Default: 0
@@ -425,6 +471,21 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+--- !u!114 &114523766412360838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: HarmonyEffect
+  Min: 0
+  Max: 10
+  Default: 0
 --- !u!114 &114544171645233396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,6 +500,21 @@ MonoBehaviour:
   Name: Distance
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114550793491678476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: BassEffect
+  Min: 0
+  Max: 10
   Default: 0
 --- !u!114 &114608985443682592
 MonoBehaviour:
@@ -559,6 +635,21 @@ MonoBehaviour:
   Name: Fire
   Min: 0
   Max: 3
+  Default: 0
+--- !u!114 &114673507218988322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: WinWerid
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114755689376594276
 MonoBehaviour:
@@ -757,11 +848,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/AzMacbook/Documents/GitHub/Gamejam2018JAN/Game/FMODAssets/GameFmodSession/Build/Desktop/Master
     Bank.bank
-  lastModified: 636527405500000000
+  lastModified: 636527410070000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 13117664
+    Value: 13118208
   Exists: 1
 --- !u!114 &114957527031390852
 MonoBehaviour:

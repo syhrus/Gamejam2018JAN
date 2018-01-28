@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{11de4984-5883-4948-a14a-ecb42e583dbd}">
+        <property name="name">
+            <value>WinWerid</value>
+        </property>
+        <relationship name="folder">
+            <destination>{3a533c7c-df74-46bd-8011-03faee7a296e}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{47c27d7e-70c9-465e-b0ca-227185fcd677}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{47c27d7e-70c9-465e-b0ca-227185fcd677}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

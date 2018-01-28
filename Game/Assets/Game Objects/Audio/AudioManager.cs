@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     FMOD.Studio.EventInstance music01Event;
     FMOD.Studio.ParameterInstance fireParameter;
+    FMOD.Studio.ParameterInstance winGoodBad;
 
     FMOD.Studio.ParameterInstance bassEffectParameter;
     FMOD.Studio.ParameterInstance synthEffectParameter;
@@ -74,12 +75,12 @@ public class AudioManager : MonoBehaviour
     {
         music01Event = FMODUnity.RuntimeManager.CreateInstance("event:/Music01");
         music01Event.getParameter("Fire", out fireParameter);
+        music01Event.getParameter("WinWeird", out winGoodBad);
 
         music01Event.getParameter("BassEffect", out bassEffectParameter);
         music01Event.getParameter("SynthEffect", out synthEffectParameter);
         music01Event.getParameter("DrumsEffect", out drumsEffectParameter);
         music01Event.getParameter("HarmonyEffect", out harmonysEffectParameter);
-
 
 
         music01Event.start();
@@ -118,6 +119,18 @@ public class AudioManager : MonoBehaviour
         satelliteFailSFXEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SatelliteDown");
         satelliteFailSFXEvent.start();
 
+    }
+
+    public void Win (bool correct)
+    {
+        if (correct == true)
+        {
+            winGoodBad.setValue(0);
+        }else{
+            winGoodBad.setValue(1);
+        }
+
+        fireOnOff = 3;
     }
 
     public void resetAudioEffects()
