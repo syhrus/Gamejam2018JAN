@@ -79,6 +79,8 @@ public class MultiSatAction : MonoBehaviour {
 
     IEnumerator WaitThenLaunch(Collider other, bool fired)
     {
+        float lightRange = GetComponent<Light>().range;
+        Coroutine shrink = StartCoroutine(PulseLight(-0.01f, 0.1f));
         other.GetComponent<ProjectileAudioLink>().currentEffect = audioEffect;
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
         yield return new WaitForSeconds(WaitForSeconds);
@@ -90,7 +92,29 @@ public class MultiSatAction : MonoBehaviour {
         {
             other.GetComponent<Rigidbody>().AddForce(transform.up, ForceMode.Impulse);
         }
+        StopCoroutine(shrink);
+        StartCoroutine(PulseLight(0.03f, lightRange));
 
+    }
 
+    IEnumerator PulseLight(float rate, float target)
+    {
+        Light light = GetComponent<Light>();
+        if (rate < 0)
+        {
+            while (light.range > target)
+            {
+                light.range += rate;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+        else
+        {
+            while (light.range < target)
+            {
+                light.range += rate;
+                yield return new WaitForEndOfFrame();
+            }
+        }
     }
 }
