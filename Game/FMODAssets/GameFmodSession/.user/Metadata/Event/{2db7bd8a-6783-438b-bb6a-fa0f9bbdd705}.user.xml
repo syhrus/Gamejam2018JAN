@@ -2,27 +2,27 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{2db7bd8a-6783-438b-bb6a-fa0f9bbdd705}">
         <relationship name="selectables">
-            <destination>{14671394-5fd2-4853-8857-97569dda03a4}</destination>
+            <destination>{ff29a755-e55f-4c63-a031-c6eba8da9454}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
-            <destination>{75871ce3-2705-41b7-a2be-4cc1c2bccc77}</destination>
+            <destination>{530cbad3-e012-487b-8c52-292ef75223c3}</destination>
         </relationship>
     </object>
     <object class="MasterTrack" id="{d3076f4c-561b-4d02-86b0-517222b19162}"/>
     <object class="MixerInput" id="{379cfe0f-4f19-4414-ae2d-4b40c114d4af}"/>
     <object class="EventAutomatableProperties" id="{08d4762a-94ea-426a-925f-d71a69018562}"/>
     <object class="MarkerTrack" id="{614301f5-eed2-4adb-9eda-287005b60509}"/>
-    <object class="GroupTrack" id="{14671394-5fd2-4853-8857-97569dda03a4}"/>
+    <object class="GroupTrack" id="{14671394-5fd2-4853-8857-97569dda03a4}">
+        <property name="uiAutomationTracksVisible">
+            <value>false</value>
+        </property>
+    </object>
     <object class="GroupTrack" id="{99fd387c-8cfe-402c-be65-eebf6d479979}">
         <property name="uiAutomationTracksVisible">
             <value>false</value>
         </property>
     </object>
-    <object class="GroupTrack" id="{8d7c13ad-7aee-47be-8746-efe09622382b}">
-        <property name="uiAutomationTracksVisible">
-            <value>false</value>
-        </property>
-    </object>
+    <object class="GroupTrack" id="{8d7c13ad-7aee-47be-8746-efe09622382b}"/>
     <object class="GroupTrack" id="{148e950f-89c3-4f81-8c87-64186d68575d}"/>
     <object class="GroupTrack" id="{285d11d3-22e0-48b8-8771-fb7f6656d302}"/>
     <object class="Timeline" id="{530cbad3-e012-487b-8c52-292ef75223c3}">
@@ -56,10 +56,10 @@
     <object class="SingleSound" id="{60fd8fa5-b747-4ae8-b07a-9246e2894923}"/>
     <object class="EventMixerGroup" id="{99edfac7-b4e6-4e25-8cb8-d47f0d246c6f}"/>
     <object class="AutomationTrack" id="{24e76c69-6720-4682-9b17-d03ea4e8ab40}"/>
-    <object class="SingleSound" id="{fe7311a8-5c21-4f42-8ccc-1a24de50b221}"/>
-    <object class="SingleSound" id="{0e880fe6-398d-43ed-9f6e-6f308c24f588}"/>
-    <object class="SingleSound" id="{f3a96b97-1661-4014-9b28-271980c5aeec}"/>
-    <object class="SingleSound" id="{ba287e27-43de-4241-ae67-fd814cc85370}"/>
+    <object class="SingleSound" id="{a071708c-404f-41df-9fd1-45ce3f47a7d9}"/>
+    <object class="SingleSound" id="{e1fcf08a-6d9d-4aae-a5b1-d27e9b8b8851}"/>
+    <object class="SingleSound" id="{773b1f7b-fc8c-4770-ae61-625be73407b1}"/>
+    <object class="SingleSound" id="{ff29a755-e55f-4c63-a031-c6eba8da9454}"/>
     <object class="EventMixerGroup" id="{269cca81-9f50-4163-9fe6-052c5e2298ef}"/>
     <object class="AutomationTrack" id="{e17f35c7-c3a6-4c8e-ba2a-ee7466286403}"/>
     <object class="SingleSound" id="{d0a5a72f-3557-4280-acdb-55a6ac4cb8f1}"/>

@@ -5,7 +5,7 @@
             <value>14</value>
         </property>
         <relationship name="selectables">
-            <destination>{7c51a0ff-55ce-4d60-b616-8a02dabd1be8}</destination>
+            <destination>{4357b0d2-c14e-4831-b4e9-8f4b4022570f}</destination>
         </relationship>
         <relationship name="items">
             <destination>{24463645-7818-4934-8ffc-4c4d0525892b}</destination>
