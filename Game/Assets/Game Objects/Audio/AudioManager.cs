@@ -118,38 +118,80 @@ public class AudioManager : MonoBehaviour
                     {
                         case EffectType.CLEAN:
                             {
-                                bassEffectIndex = 0;
+                                //bassEffectIndex = 0;
                                 break;
                             }
                         case EffectType.BITCRUSH:
                             {
-                                bassEffectIndex = 1;
-                                break;
+								if (bassEffectIndex == 1) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 1;
+								}
+								break;
                             }
                         case EffectType.REVERB:
                             {
-                                bassEffectIndex = 2;
-                                break;
+								if (bassEffectIndex == 2) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 2;
+								}
+								break;
                             }
                         case EffectType.RINGMOD:
                             {
-                                bassEffectIndex = 3;
-                                break;
+								if (bassEffectIndex == 3) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 3;
+								}
+								break;
                             }
                         case EffectType.FLANGE:
                             {
-                                bassEffectIndex = 4;
-                                break;
+								if (bassEffectIndex == 4) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 4;
+								}
+								break;
                             }
                         case EffectType.SQUELCH:
                             {
-                                bassEffectIndex = 5;
-                                break;
+								if (bassEffectIndex == 5) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 5;
+								}
+								break;
                             }
                         case EffectType.VOICE:
                             {
-                                bassEffectIndex = 6;
-                                break;
+								if (bassEffectIndex == 6) 
+								{
+									bassEffectIndex = 0;
+								}
+								else 
+								{
+									bassEffectIndex = 6;
+								}
+								break;
                             }
                     }
                     break;
@@ -160,38 +202,80 @@ public class AudioManager : MonoBehaviour
                     {
                         case EffectType.CLEAN:
                             {
-                                synthEffectIndex = 0;
+                                //synthEffectIndex = 0;
                                 break;
                             }
                         case EffectType.BITCRUSH:
                             {
-                                synthEffectIndex = 1;
-                                break;
+								if (synthEffectIndex == 1) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 1;
+								}
+								break;
                             }
                         case EffectType.REVERB:
-                            {
-                                synthEffectIndex = 2;
-                                break;
-                            }
+							{
+								if (synthEffectIndex == 2) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 2;
+								}
+								break;
+							}
                         case EffectType.RINGMOD:
                             {
-                                synthEffectIndex = 3;
-                                break;
+								if (synthEffectIndex == 3) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 3;
+								}
+								break;
                             }
                         case EffectType.FLANGE:
                             {
-                                synthEffectIndex = 4;
-                                break;
+								if (synthEffectIndex == 4) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 4;
+								}
+								break;
                             }
                         case EffectType.SQUELCH:
                             {
-                                synthEffectIndex = 5;
-                                break;
+								if (synthEffectIndex == 5) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 5;
+								}
+								break;
                             }
                         case EffectType.VOICE:
                             {
-                                synthEffectIndex = 6;
-                                break;
+								if (synthEffectIndex == 6) 
+								{
+									synthEffectIndex = 0;
+								}
+								else 
+								{
+									synthEffectIndex = 6;
+								}
+								break;
                             }
                     }
                     break;
@@ -202,38 +286,80 @@ public class AudioManager : MonoBehaviour
                     {
                         case EffectType.CLEAN:
                             {
-                                drumsEffectIndex = 0;
+                                //drumsEffectIndex = 0;
                                 break;
                             }
                         case EffectType.BITCRUSH:
                             {
-                                drumsEffectIndex = 1;
-                                break;
+								if (drumsEffectIndex == 1) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 1;
+								}
+								break;
                             }
                         case EffectType.REVERB:
                             {
-                                drumsEffectIndex = 2;
-                                break;
+								if (drumsEffectIndex == 2) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 2;
+								}
+								break;
                             }
                         case EffectType.RINGMOD:
                             {
-                                drumsEffectIndex = 3;
-                                break;
+								if (drumsEffectIndex == 3) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 3;
+								}
+								break;
                             }
                         case EffectType.FLANGE:
                             {
-                                drumsEffectIndex = 4;
-                                break;
+								if (drumsEffectIndex == 4) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 4;
+								}
+								break;
                             }
                         case EffectType.SQUELCH:
                             {
-                                drumsEffectIndex = 5;
-                                break;
+								if (drumsEffectIndex == 5) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 5;
+								}
+								break;
                             }
                         case EffectType.VOICE:
                             {
-                                drumsEffectIndex = 6;
-                                break;
+								if (drumsEffectIndex == 6) 
+								{
+									drumsEffectIndex = 0;
+								}
+								else 
+								{
+									drumsEffectIndex = 6;
+								}
+								break;
                             }
                     }
                     break;
@@ -244,38 +370,80 @@ public class AudioManager : MonoBehaviour
                     {
                         case EffectType.CLEAN:
                             {
-                                harmonysEffectIndex = 0;
+                                //harmonysEffectIndex = 0;
                                 break;
                             }
                         case EffectType.BITCRUSH:
                             {
-                                harmonysEffectIndex = 1;
-                                break;
+								if (harmonysEffectIndex == 1) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 1;
+								}
+								break;
                             }
                         case EffectType.REVERB:
                             {
-                                harmonysEffectIndex = 2;
-                                break;
+								if (harmonysEffectIndex == 2) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 2;
+								}
+								break;
                             }
                         case EffectType.RINGMOD:
                             {
-                                harmonysEffectIndex = 3;
-                                break;
+								if (harmonysEffectIndex == 3) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 3;
+								}
+								break;
                             }
                         case EffectType.FLANGE:
                             {
-                                harmonysEffectIndex = 4;
-                                break;
+								if (harmonysEffectIndex == 4) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 4;
+								}
+								break;
                             }
                         case EffectType.SQUELCH:
                             {
-                                harmonysEffectIndex = 5;
-                                break;
+								if (harmonysEffectIndex == 5) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 5;
+								}
+								break;
                             }
                         case EffectType.VOICE:
                             {
-                                harmonysEffectIndex = 6;
-                                break;
+								if (harmonysEffectIndex == 6) 
+								{
+									harmonysEffectIndex = 0;
+								}
+								else 
+								{
+									harmonysEffectIndex = 6;
+								}
+								break;
                             }
                     }
                     break;
