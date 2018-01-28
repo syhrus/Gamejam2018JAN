@@ -34,10 +34,13 @@ public class GunAim : MonoBehaviour {
 
         if (isClicked)
         {
-            float MouseDelta = Input.GetAxis("Mouse X");
-            Debug.Log("Change: " + MouseDelta);
-
-            barrel.RotateAround(transform.position, new Vector3(0, 0, -1), MouseDelta * rotateSpeed);
+            Vector3 mouse_pos = Input.mousePosition;
+            mouse_pos.z = 0f; //The distance between the camera and object
+            Vector3 object_pos = Camera.main.WorldToScreenPoint(transform.position);
+            mouse_pos.x = mouse_pos.x - object_pos.x;
+            mouse_pos.y = mouse_pos.y - object_pos.y;
+            float angle = (Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg) - 90.0f;
+            barrel.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         }
         if (FIRE && canFire)
         {
@@ -45,6 +48,7 @@ public class GunAim : MonoBehaviour {
 			firedProjectile.GetComponent<Rigidbody>().mass = speedMod;
             firedProjectile.GetComponent<Rigidbody>().AddForce(barrel.up, ForceMode.Impulse);
             firedProjectile.GetComponent<ProjectileAudioLink>().thisTrack = thisTrack;
+            GameObject.Find("Audiomanager").GetComponent<AudioManager>().Ping();
             FIRE = false;
             canFire = false;
         }

@@ -4,19 +4,36 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainScreenEvent : MonoBehaviour {
-    
+
+    bool showMenu = false;
+    GameObject instructions;
+
 	void Start () {
         
-        GameObject.Find("Audiomanager").GetComponent<AudioManager>().fireOnOff = 1;
+        GameObject.Find("Audiomanager").GetComponent<AudioManager>().fireOnOff = 2;
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().FadeIn(20);
-
+        instructions = GameObject.Find("InstructionScreen");
         StartCoroutine(ZoomLogo());
+    }
+
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            showMenu = true;
+        }
+        instructions.SetActive(showMenu);
     }
 
     public void LoadLevel()
     {
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().StopAudio();
         SceneManager.LoadScene("Level01", LoadSceneMode.Single);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     IEnumerator ZoomLogo()

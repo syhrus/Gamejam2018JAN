@@ -66,14 +66,37 @@ public class OneUseSatAction : MonoBehaviour {
 
     IEnumerator WaitThenLaunch(Collider other)
     {
+        Coroutine shrink = StartCoroutine(PulseLight(-0.01f, 0.1f));
         other.GetComponent<ProjectileAudioLink>().currentEffect = audioEffect;
         GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
         yield return new WaitForSeconds(WaitForSeconds);
         other.GetComponent<Rigidbody>().AddForce(transform.up, ForceMode.Impulse);
 
         Instantiate(explosion, transform.position, new Quaternion());
+        GameObject.Find("Audiomanager").GetComponent<AudioManager>().SatelitteDown();
         gameObject.SetActive(false);
 
+
         
+    }
+    IEnumerator PulseLight(float rate, float target)
+    {
+        Light light = GetComponent<Light>();
+        if (rate < 0)
+        {
+            while (light.range > target)
+            {
+                light.range += rate;
+                yield return new WaitForEndOfFrame();
+            }
+        }
+        else
+        {
+            while (light.range < target)
+            {
+                light.range += rate;
+                yield return new WaitForEndOfFrame();
+            }
+        }
     }
 }
