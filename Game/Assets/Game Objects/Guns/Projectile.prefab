@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 135680804581496160}
   - component: {fileID: 114466918552090210}
   - component: {fileID: 95269228206626220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Projectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisTrack: 0
+  currentEffect: 0
 --- !u!135 &135680804581496160
 SphereCollider:
   m_ObjectHideFlags: 1

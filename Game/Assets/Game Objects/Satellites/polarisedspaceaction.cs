@@ -59,6 +59,7 @@ public class polarisedspaceaction : MonoBehaviour {
             }
             else
             {
+                other.GetComponent<ProjectileAudioLink>().currentEffect = audioEffect;
                 GameObject.Find("Audiomanager").GetComponent<AudioManager>().AddEffect(audioEffect, effectStrength, other.GetComponent<ProjectileAudioLink>().thisTrack);
             }
         }
