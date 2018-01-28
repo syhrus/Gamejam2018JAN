@@ -31,6 +31,7 @@ public class ResetScript : MonoBehaviour {
 
         for(int i = 0; i < guns.Length; i++)
         {
+            guns[i].GetComponent<GunAim>().FIRE = false;
             guns[i].GetComponent<GunAim>().canFire = true;
         }
         for (int i = 0; i < oneUse.Length; i++)
